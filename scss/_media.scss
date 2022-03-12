@@ -1,0 +1,158 @@
+  /* ----------------------- Responcive -------------------------- */
+  @media only screen and (max-width: 990px) {
+    .hide{
+      display:none;
+    }
+    .hidden{
+      opacity: 0;
+    }
+  
+  header{
+    .background{
+      &:before{
+        height:400px !important ;
+      }
+      .content-left{
+        >*{
+          padding: 20px 0 !important;
+      }
+      }
+    }
+  }
+  .content-left-titr{
+    margin: 10px 30px !important;
+  }
+    .welcome{
+      .welcome-img{
+        margin-bottom: 200px!important;
+      .owl-carousel{
+        left:-150px !important;
+        
+      }
+      }
+      
+    } 
+    .service{
+      padding-right: 30px !important;
+      &:after{
+        opacity: 0;
+      }
+    } 
+    .design{
+      padding-left: 30px !important;
+      right:0px !important;
+      &:before{
+        opacity: 0;
+      }
+    }
+    .right{
+      left: 0 !important;
+    }
+    .left{
+      right: 0 !important;
+      
+    }
+  
+  footer{
+    .top{
+      left: 0 !important;
+      right: 0 !important;
+      margin: auto !important;
+    }
+  }
+  }
+  @media only screen and (max-width: 760px) {
+
+  .welcome{
+  
+      top:20px !important;
+    }
+  
+     
+  .content-left-orginal{
+    margin:30px 0 0 0 !important;
+    height: 360px !important;
+    width: 100% !important;
+    padding: 0 20px !important;
+   
+  }   
+
+  .content-img{
+    margin: 20px !important;
+   img{
+height: 280px !important;
+
+   }
+  }
+
+}
+ 
+
+@media only screen and ( max-width:900px) AND(min-width: 760px) {
+  
+  .welcome{
+    .welcome-img{
+      
+    .owl-carousel{
+    
+    
+      top:50px !important;
+      
+      .item{
+        img{
+            width:600px !important;
+            
+        }
+
+    }
+    }
+  } 
+}
+.content-left-orginal{
+  margin:0   !important;
+  height: 400px !important;
+  width: 100% !important;
+  padding-right: 30px !important;
+  
+} 
+
+.content-img{
+  margin: 20px !important;
+  img{
+    
+    height: 250px !important;
+    margin-top: 60px !important;
+  }
+} 
+
+
+}
+
+@media only screen and  ( min-width:900px) AND (max-width: 1200px) {
+  header{
+    .background{
+      &:before{
+        width:300px !important ;
+      }
+    }
+  }
+  .content-left-orginal{
+    width: 550px !important;
+    // padding-right: 30px !important;
+    }
+    .design{
+      margin-left: 50px !important;
+    }
+    .right{
+      left: 20px !important;
+    }
+  .left{
+      right: -10px!important;
+    
+  }
+  footer{
+    .top{
+      left:800 !important;
+    }
+  }
+}

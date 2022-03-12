@@ -1,0 +1,15 @@
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+@mixin textalign($align) {
+    -moz-text-align:    $align;
+    -o-text-align:    $align;
+    -webkit-text-align:    $align;
+    text-align:    $align;
+}
+

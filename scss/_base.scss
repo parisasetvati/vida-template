@@ -1,0 +1,187 @@
+@import 'Mixin';
+a:hover{
+    text-decoration: none;
+}
+section{
+    margin:70px auto;
+}
+
+
+%abs{
+    right: 0;
+    top:0;
+    left:0;
+    bottom: 0;
+}
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+%flex-row{
+    display: flex;
+    flex-flow: row nowrap;
+   
+}
+%flex-column{
+    display: flex;
+    flex-flow: column nowrap;
+  
+   
+}
+
+
+
+
+
+
+   img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+
+    border: 0;
+   }
+  
+   
+p{
+    font-size: 9pt;
+    text-overflow: clip;
+    text-align: justify;
+}
+   
+  button:focus{
+      outline: none;
+  }
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+select:focus{
+    outline: none;
+}
+
+ .clear{
+     clear:both;
+ }
+ 
+ .content-left-titr{
+
+    position: relative;
+    margin: 0  0 40px 0;
+    h4{
+        font-style: inherit;
+        font-weight: bold;
+        margin-left: 25px;
+        margin-bottom:20px ;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 11px;
+            height: 43px;
+            background: #000;
+            left: 0px;
+            top:-20px;
+        }
+    }
+    p{
+        
+       
+        margin: 20px 0;
+    }
+}
+.custum-btn{
+    border:1px solid $yellow;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    a{
+        color:$yellow;
+    }
+}
+.content-left-orginal{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+   padding-top:90px;
+padding-bottom: 90px;
+
+    width: 660px;
+    height: 300px;
+    margin-top: 50px;
+    
+    background: rgb(255, 255, 255);
+  
+    p{
+        margin-bottom: 30px;
+    }
+}
+.service{
+    padding-right: 130px;
+    padding-left: 20px;
+      &:after{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        top:150px;
+        left:550px;
+        background: #000;  
+    }
+
+}
+.design{
+    position: relative;
+    right: 130px;
+    z-index: 1;
+    padding-right: 20px;
+    padding-left: 240px;
+    margin-left: 20px;;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        top:150px;
+        left:20px;
+        background: #000;
+    }
+}
+.content-img{
+    position: relative;
+    z-index: -1;
+    top:20px;
+    
+    img{
+        width:550px;
+        height: 350px;
+    }
+}
+.right{
+    left:60px;
+}
+.left{
+    right:50px;
+}
+.btn-right{
+    float:right;
+}
+ .owl-nav{
+   position: relative;
+   left:210px;
+
+     .owl-prev,.owl-next{
+       
+         span{
+// background: rgb(245, 16, 16);
+         color:#000;
+        
+         font-size: 40pt;
+        
+        
+ }
+}
+ }
